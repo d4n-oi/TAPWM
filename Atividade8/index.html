@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triângulos</title>
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            align-items: center;
+            background-color: #fec3c3;
+            padding: 20px;
+        }
+        .container {
+            background-color: #e9afaf;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #fb8a8a;
+            border-radius: 20px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #fb8a8a;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Insira 3 números</h2>
+        <p>Digite os valores para os calculos</p>
+        <input class="form-control" type="number" id="num1" placeholder="Número 1"></br>
+        <input class="form-control" type="number" id="num2" placeholder="Número 2"></br>
+        <input class="form-control" type="number" id="num3" placeholder="Número 3"></br>
+        <button class="btn btn-outline-danger" onclick="Operacoes()">resultados</button></br>
+        <p id="resultado1"></p>
+    </div>
+
+    <div class="container">
+        <h2>Insira 5 letras</h2>
+        <p>Digite as letras para o resultado</p>
+        <input class="form-control" type="text" id="txt1" placeholder="Primeira letra"></br>
+        <input class="form-control" type="text" id="txt2" placeholder="Segunda letra"></br>
+        <input class="form-control" type="text" id="txt3" placeholder="Terceira letra"></br>
+        <input class="form-control" type="text" id="txt4" placeholder="Quarta letra"></br>
+        <input class="form-control" type="text" id="txt5" placeholder="Quinta letra"></br>
+        <button class="btn btn-outline-danger" onclick="Palavra()">resultados</button></br>
+        <p id="resultado2"></p>
+    </div>
+
+</body>
+</html>
