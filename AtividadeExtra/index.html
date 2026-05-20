@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Formas de criar objetos</title>
+</head>
+<body>
+    <script>
+        var pessoa1 = new Object();
+        pessoa1.nome = "joão";
+        pessoa1.idade = 20;
+        pessoa1.hobby = "tocar violão";
+        alert(`Olá meu nome é ${pessoa1.nome}, tenho ${pessoa1.idade} anos e meu hobby é ${pessoa1.hobby}`);
+
+        var pessoa2 = {
+            nome: "joão",
+            idade: 20,
+            hobby: "tocar violão"
+        };
+        alert(`Olá meu nome é ${pessoa2.nome}, tenho ${pessoa2.idade} anos e meu hobby é ${pessoa2.hobby}`);
+
+        function Pessoa(nome, idade, hobby) {
+            this.nome = nome;
+            this.idade = idade;
+            this.hobby = hobby;
+        }
+        var pessoa3 = new Pessoa("joão", 20, "tocar violão");
+        alert(`Olá meu nome é ${pessoa3.nome}, tenho ${pessoa3.idade} anos e meu hobby é ${pessoa3.hobby}`);
+
+        var prototipoPessoa = {
+            nome: "joão",
+            idade: 20,
+            hobby: "tocar violão"
+        };
+        var pessoa4 = Object.create(prototipoPessoa);
+        alert(`Olá meu nome é ${pessoa4.nome}, tenho ${pessoa4.idade} anos e meu hobby é ${pessoa4.hobby}`);
+
+        class PessoaClasse {
+            constructor(nome, idade, hobby) {
+                this.nome = nome;
+                this.idade = idade;
+                this.hobby = hobby;
+            }
+        }
+        var pessoa5 = new PessoaClasse("joão", 20, "tocar violão");
+        alert(`Olá meu nome é ${pessoa5.nome}, tenho ${pessoa5.idade} anos e meu hobby é ${pessoa5.hobby}`);
+    </script>
+</body>
+</html>
